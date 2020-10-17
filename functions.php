@@ -2,7 +2,6 @@
 /**
  * Custom blog navigation for Maxwell.
 **/
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function enqueue_parent_styles() {
     $parenthandle = 'maxwell-stylesheet';
@@ -16,3 +15,5 @@ function enqueue_parent_styles() {
         $theme->get('Version')
     );
 }
+
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
