@@ -5,7 +5,7 @@
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function enqueue_parent_styles() {
-    $parenthandle = 'maxwell';
+    $parenthandle = 'maxwell-stylesheet';
     $theme = wp_get_theme();
     wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
         array(), 
@@ -16,4 +16,3 @@ function enqueue_parent_styles() {
         $theme->get('Version')
     );
 }
-
