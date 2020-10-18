@@ -24,7 +24,9 @@ if ( is_object( $related_posts ) and $related_posts->have_posts() ) : ?>
 				<?php the_title( sprintf( '<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 
 			</header><!-- .entry-header -->
+            <div class="related-post-excerpt">
             <?php the_excerpt(); ?>
+            </div><!-- .related-post-excerpt>
 			<?php tzrp_entry_meta(); ?>
 
 
