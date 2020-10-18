@@ -3,6 +3,9 @@
  * Custom blog navigation for Maxwell.
 **/
 
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+
 function enqueue_parent_styles() {
     $parenthandle = 'maxwell-stylesheet';
     $theme = wp_get_theme();
