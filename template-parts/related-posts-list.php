@@ -25,8 +25,8 @@ if ( is_object( $related_posts ) and $related_posts->have_posts() ) : ?>
 
 			</header><!-- .entry-header -->
             <div class="related-post-excerpt">
-            <?php the_excerpt(); ?>
-            </div><!-- .related-post-excerpt>
+              <?php the_excerpt(); ?>
+            </div><!-- .related-post-excerpt -->
 			<?php tzrp_entry_meta(); ?>
 
 
