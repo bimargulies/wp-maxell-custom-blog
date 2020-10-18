@@ -22,4 +22,4 @@ function register_theme_support() {
     add_theme_support( 'themezee-related-posts');
 }
 
-add_action('after_setup_theme', 'register_theme_support);
+add_action('after_setup_theme', 'register_theme_support');
