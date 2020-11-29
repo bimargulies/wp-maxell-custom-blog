@@ -29,4 +29,9 @@ function my_excerpt_length($length) {
     return 1000;
 }
 
-add_filter(‘excerpt_length’, ‘my_excerpt_length’);
+add_filter(‘excerpt_length’, ‘my_excerpt_length’, 999);
+
+function wpdocs_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
