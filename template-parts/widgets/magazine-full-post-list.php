@@ -20,10 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content clearfix">
-  <!-- Hello there -->
 		<?php the_content(); ?>
-		<?php maxwell_more_link(); ?>
-
 	</div><!-- .entry-content -->
 
 </article>
