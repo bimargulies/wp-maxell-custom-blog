@@ -26,7 +26,7 @@ add_action('after_setup_theme', 'register_theme_support');
 
 
 function my_excerpt_length($length) {
-    return 80;
+    return 1000;
 }
 
 add_filter(‘excerpt_length’, ‘my_excerpt_length’);
