@@ -1,7 +1,9 @@
 <?php
 /**
- * Custom blog navigation for Maxwell.
+ * Customizations atop the maxwell theme.
 **/
+
+/* register our styles. */
 
 function enqueue_parent_styles() {
     $parenthandle = 'maxwell-stylesheet';
@@ -18,13 +20,7 @@ function enqueue_parent_styles() {
 
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
-function register_theme_support() {
-    add_theme_support( 'themezee-related-posts');
-}
-
-add_action('after_setup_theme', 'register_theme_support');
-
-
+/* We're not using excerpts now, but just in case we go back, some adjustments */
 function my_excerpt_length($length) {
     return 1000;
 }
@@ -35,3 +31,4 @@ function wpdocs_excerpt_more( $more ) {
     return '...';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
+
