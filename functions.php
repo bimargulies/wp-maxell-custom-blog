@@ -34,7 +34,6 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
 
 
 /* Teach mailpoet to default to logged-in user. */
-add_filter( ‘mailpoet_form_widget_post_process’, ‘gsdoc_get_user_email’ );
 
 function gsdoc_get_user_email( $form ) {
     if( is_user_logged_in() ){
