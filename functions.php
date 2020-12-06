@@ -51,4 +51,4 @@ function improve_login_page() {
   }
 }
 
-add_action('wp_head', 'wpb_hook_javascript');
+add_action('wp_head', 'improve_login_page');
