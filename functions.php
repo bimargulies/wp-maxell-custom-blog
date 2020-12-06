@@ -34,7 +34,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
 
 
 function improve_login_page() {
-    echo '<!-- HELLO -->'; //. $GLOBALS['pagenow'] . '-->';
+    echo '<!-- HELLO -->';
     // if ( $GLOBALS['pagenow'] === 'wp-login.php' ) {
     //     $current_user = "";
     //     if( is_user_logged_in()) {
@@ -51,4 +51,4 @@ function improve_login_page() {
     // }
 }
 
-add_action('wp_head', 'improve_login_page');
+add_action('login_header', 'improve_login_page');
