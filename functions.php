@@ -39,7 +39,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
      if( is_user_logged_in() ){
          global $wpdb;
          $current_user2 = wp_get_current_user();
-         $pol1 = ' value ';
+         $pol1 = 'value=""';
          $pol2 = 'value="' . $current_user2->user_email . '"';
          $form = str_replace($pol1, $pol2, $form);
          return $form;
