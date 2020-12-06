@@ -4,7 +4,7 @@
     Maxwell Child with Custom Blog Navigation
   Author: Benson Margulies
   Template: maxwell
-  Version: 1.0.5
+  Version: 1.0.6
   License:      GNU General Public License v2 or later
   License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -13,11 +13,11 @@
 
 /* Paragraph spacing */
 .column-title {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 .subscription-link {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 0;
 }
 
