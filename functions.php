@@ -34,21 +34,21 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more', 999);
 
 
 function improve_login_page() {
-    echo '<!-- ' . $GLOBALS['pagenow'] . '-->';
-    if ( $GLOBALS['pagenow'] === 'wp-login.php' ) {
-        $current_user = "";
-        if( is_user_logged_in()) {
-            global $wpdb;
-            $current_user = wp_get_current_user();
-        }
-        $output = '<script type="text/javascript">';
-        $output .= 'window.onload = function() {';
-        $output .= 'jQuery("#login > h1").append("<p class='login-note'>';
-        $output .= 'Please click on <a href="https://blog.dchbk.us/wp-login.php?action=register">Register</a> if this is your first visit.</p>");';
-        $output .= '}';
-        $output .= '</script>';
-        echo $output;
-    }
+    echo '<!-- HELLO ' . $GLOBALS['pagenow'] . '-->';
+    // if ( $GLOBALS['pagenow'] === 'wp-login.php' ) {
+    //     $current_user = "";
+    //     if( is_user_logged_in()) {
+    //         global $wpdb;
+    //         $current_user = wp_get_current_user();
+    //     }
+    //     $output = '<script type="text/javascript">';
+    //     $output .= 'window.onload = function() {';
+    //     $output .= 'jQuery("#login > h1").append("<p class='login-note'>';
+    //     $output .= 'Please click on <a href="https://blog.dchbk.us/wp-login.php?action=register">Register</a> if this is your first visit.</p>");';
+    //     $output .= '}';
+    //     $output .= '</script>';
+    //     echo $output;
+    // }
 }
 
 add_action('wp_head', 'improve_login_page');
