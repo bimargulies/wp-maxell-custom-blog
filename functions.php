@@ -41,8 +41,7 @@ function improve_login_page() {
     }
     $output = '<script type="text/javascript">';
     $output .= 'window.onload = function() {';
-    $output .= 'jQuery("#login > h1").append("<p class=\'login-note\'>';
-    $output .= 'If this is your first visit, please click on <a href=\'https://blog.dchbk.us/wp-login.php?action=register\'>Register</a>.</p>");';
+    $output .= 'jQuery("<p class=\'login-note\'>If this is your first visit, please click on <a href=\'https://blog.dchbk.us/wp-login.php?action=register\'>Register</a>.</p>").insertAfter("#login > h1");';
     $output .= '}';
     $output .= '</script>';
     echo $output;
