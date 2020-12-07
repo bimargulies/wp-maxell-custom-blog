@@ -4,7 +4,7 @@
     Maxwell Child with Custom Blog Navigation
   Author: Benson Margulies
   Template: maxwell
-  Version: 1.0.8
+  Version: 1.0.9
   License:      GNU General Public License v2 or later
   License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -23,47 +23,24 @@
 
 /* No thumbnails */
 main > article.post > img.attachment-post-thumbnail {
-	display: none;
-}
-
-/* make the magazine homepage into two cols. This is to be deleted */
-
-
-section.themezee-related-posts li {
-	margin-bottom: 0;
-}
-
-#maxwell-magazine-posts-list-2  {
-	float: left;
-	width: 50%;
-}
-
-#photonic-widget-2 {
-	float: right;
-	width: 50%;
-}
-
-#maxwell-magazine-posts-list-4  {
-	float: right;
-	clear: both;
-	width: 50%;
+    display: none;
 }
 
 /* Remove unwanted title collections. */
 #photonic-flickr-stream-1 > div.photonic-object-header.photonic-flickr-collection
 {
-	display: none;
+    display: none;
 }
 
 /* Make titles smaller. */
 h2.entry-title > a {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 
 /* Homepage2: customize to remove extra page title and blog post titles. */
 .page-id-281 .page-title {
-	display: none;
+    display: none;
 }
 
 .login-note {
@@ -71,3 +48,38 @@ h2.entry-title > a {
     font-size: small;
 }
 
+#content {
+    padding: 1em;
+}
+
+/* indent non-first paras. */
+.entry-content p + p {
+    text-indent: 1em;
+}
+
+.entry-content li p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.entry-content li p:first-child {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#content {
+    padding: 0;
+}
+
+#post-281 ul.wp-block-latest-posts > li {
+    border-bottom: 1px solid black;
+    margin-bottom: .5em;
+}
+
+p.column-title {
+    margin-bottom: 0px;
+}
+
+#photonic-flickr-stream-1 {
+    margin-top: 0;
+}
