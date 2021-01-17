@@ -52,11 +52,6 @@ h2.entry-title > a {
     padding: 1em;
 }
 
-/* indent non-first paras. */
-.entry-content p + p {
-    text-indent: 1em;
-}
-
 .entry-content li p {
     margin-top: 0;
     margin-bottom: .5em;
